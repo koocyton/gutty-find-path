@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <base href="">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="The smash hit game! Control your cell and eat other players to grow larger! Play with millions of players around the world and try to become the biggest cell of all!">
+        <meta name="keywords" content="agario, agar, io, cell, cells, virus, bacteria, blob, game, games, web game, html5, fun, flash">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="minimal-ui,width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <title>Find Route</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/findroute.css?v=2021.10.18.1731" rel="stylesheet">
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/findroute.js?v=2021.10.18.1731"></script>
+    </head>
+<body>
+<div>
+    <div id="tile-map" style="float: left;"></div>
+    <div style="float: left; margin: 30px;">
+        <br><br><button onclick="g.refresh();" class="btn btn-success">重置</button>
+        <br><br><button onclick="g.findRoute('aStar');" class="btn btn-info">A* 寻路</button>
+        <br><br><button onclick="g.findRoute('jps');" class="btn btn-info">JPS 寻路 ...</button>
+        <br><br><button onclick="g.whiteBlock();" class="btn btn-success">白色阻挡</button>
+        <br><br><button onclick="g.whiteUnBlock();" class="btn btn-info">白色不阻挡</button>
+    </div>
+</div>
+</body>
+</html>

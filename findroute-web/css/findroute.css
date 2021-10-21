@@ -1,0 +1,16 @@
+body{overflow:hidden;}
+label{font-weight:normal;}
+input,button,button:focus,button:active,button:visited,a:focus,a:active{outline:none;}
+
+body .container{width:100%;}
+
+#tile-map {width:601px; height:601px; margin: 30px; overflow:hidden; border-left: 1px solid #ccc;border-top: 1px solid #ccc;}
+#tile-map ul{border-left: 1px solid #ccc;border-top: 1px solid #ccc;}
+#tile-map li{width:10px; height:10px;list-style:none;float: left;border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;}
+#tile-map li.start-tile{background:green;}
+#tile-map li.target-tile{background:red;}
+#tile-map li.route-tile{background: #cee3f3;}
+#tile-map li.point-tile{background: #65a8db;}
+#tile-map li.block-tile{background: #555555;}
+#tile-map li.grey-block-tile{background:#efefef;}
+#tile-map li.white-block-tile{}
